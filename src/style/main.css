@@ -15,7 +15,7 @@ header {
     padding: 5px;
 }
 
-header p {
+header nav {
     padding-right: 30px;
     vertical-align: bottom;
 }
@@ -25,7 +25,7 @@ header p {
     justify-content: center;
     align-items: center;
     height: 500px;
-    padding: 50px;
+    padding: 100px;
 }
 
 .hero .placeholder {
