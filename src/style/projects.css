@@ -1,0 +1,55 @@
+.projects {
+    background-color: gray;
+    color: white;
+    height: 500px;
+    padding: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.placeholder-small {
+    width: 200px;
+    height: 100px;
+    background-color: darkgray;
+    border-radius: 15px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.project-buttons button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button.live {
+    background-color: white;
+    width: 50px;
+    
+}
+
+button.code {
+    background-color: darkgray;
+    width: 75px;
+}
+
+.project p {
+    padding: 5px;
+}
