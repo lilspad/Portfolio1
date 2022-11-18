@@ -6,12 +6,13 @@
 }
 
 header {
+    display: block;
+    position: fixed;
     margin-top: 0;
     width: 100%;
     height: auto;
     background-color: #FFFFFF;
     text-align: right;
-    vertical-align: middle;
     padding: 5px;
 }
 
@@ -24,7 +25,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 90vw;
     padding: 100px;
 }
 
@@ -35,7 +36,7 @@ header nav {
 }
 
 h1 {
-    text-align: center;;
+    text-align: center;
     font-weight: 400;
     font-size: 46px;
     width: 100%;
