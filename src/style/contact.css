@@ -1,17 +1,98 @@
+.contact {
+    height: 100vh;
+    width: 100%;
+    font-size: 2rem;
+    background-color: white;
+    margin: 0;
+}
+
+.contact h3 {
+    padding: 2%;
+}
+
+.contact form {
+    height: 50%;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+form input,
+textarea {
+    border: 0.5px solid #1C2826;
+    background-color: #EEF4D4;
+    border-radius: 15px;
+    width: 40%;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#top {
+    height: 25%;
+    width: 60%;
+    margin: auto;
+}
+
+#bottom {
+    height: 70%;
+}
+
+#bottom textarea {
+    height: 85%;
+    width: 65%;
+}
+
+#submit {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #1C2826;
+    color: white;
+
+}
+
+#submit:hover {
+    background-color: #DAEFB3;
+    color: black;
+    transition: all 0.5s;
+}
+
 .contact-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-
-    min-width: 640px;
-    max-width: 30%;
     margin: auto;
-    padding: 10px;
+    height: 20%;
+    width: 100%;
 }
 
 .contact-container i {
-    padding:  10px;
-    min-width: 200px;
+    font-size: 2.5rem;
+    height: 50%;
+    width: 25%;
     text-align: center;
-    line-height: 18px;
+    line-height: 3rem;
+    color: #1C2826;
+}
+
+.contact-container a {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+footer {
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+    height: 40px;
+    padding: 1%;
 }

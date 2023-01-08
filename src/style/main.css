@@ -2,44 +2,93 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    border: solid red 0.1px;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+body {
+    background-color: #DAEFB3;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
 }
 
 header {
     display: block;
-    position: fixed;
+    /*position: fixed;*/
     margin-top: 0;
     width: 100%;
     height: auto;
-    background-color: #FFFFFF;
-    text-align: right;
-    padding: 5px;
 }
 
-header nav {
-    padding-right: 30px;
-    vertical-align: bottom;
+header .button {
+    text-align: center;
+    font-size: 24px;
+    border-radius: 40px;
+    padding: 1rem;
+    width: 10%;
+    background-color: white;
+    border: none;
+    color: black;
+    margin-top: 1rem;
+}
+
+header .button:hover {
+    background-color: #1C2826;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header h3 {
+    padding: 1rem;
 }
 
 .hero {
+    height: 95vh;
+}
+
+.hero-display {
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.hero .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vw;
-    padding: 100px;
+    height: 50%;
 }
 
-.hero .placeholder {
+.shape {
     width: 100%;
-    height: 100%;
-    border: 0.1px solid black;
+    border: 3px solid #DAEFB3;
 }
 
-h1 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 46px;
-    width: 100%;
-    height: 100%;
+#one {
+    background-color: #EEF4D4;
 }
 
+#one h3 {
+    margin: 16%;
+}
+
+#two {
+    background-color: #EA9E8D;
+}
+
+#three {
+    background-color: #D64550;
+}
