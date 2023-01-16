@@ -6,6 +6,9 @@
     font-style: normal;
     font-size: 1rem;
     text-decoration: none;
+    color: inherit;
+    cursor: auto;
+    transition: all 0.6s ease;
 }
 
 body {
@@ -30,16 +33,16 @@ header .button {
     font-size: 24px;
     border-radius: 40px;
     padding: 1rem;
-    width: 10%;
     background-color: white;
     border: none;
     color: black;
     margin-top: 1rem;
+    width: 10%;
 }
 
 header .button:hover {
     background-color: #1C2826;
-    color: white;
+    color: #EEF4D4;
     transition: all 0.5s;
 }
 
@@ -61,7 +64,7 @@ header h3 {
 
 .hero-display {
     display: block;
-    width: 80%;
+    width: 70%;
     height: 50%;
     margin: auto;
     margin-top: 4%;
@@ -73,22 +76,32 @@ header h3 {
 }
 
 .shape {
-    width: 100%;
-    border: 3px solid #DAEFB3;
+    width: 50%;
+    border: 2px solid #DAEFB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
-#one {
+.shape h2 {
+    font-size: 3.75rem;
+}
+
+.shape h1 {
+    font-size: 7.5rem;
+}
+
+.one {
     background-color: #EEF4D4;
 }
 
-#one h3 {
-    margin: 16%;
-}
-
-#two {
+.two {
     background-color: #EA9E8D;
+    width: 25%;
 }
 
-#three {
+.three {
     background-color: #D64550;
+    width: 25%;
 }
