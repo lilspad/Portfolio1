@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="src/style/main.css" />
     <link rel="stylesheet" href="src/style/contact.css" />
+    <link rel="stylesheet" href="src/style/about.css" />
+    <link rel="stylesheet" href="src/style/skills.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +20,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/349bd4180c.js" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="src/script/contact.js"></script>
-
   </head>
 
   <body>
@@ -28,8 +28,9 @@
 
       <div class="container">
 
-        <h3>Lily Paczesniak</h3>
-        <a href="#contact" class="button">Contact</a>
+        <button class="button" id="theme">☀</i></button>
+
+        <a href="#contact" class="button" id="con">Contact</a>
 
       </div>
 
@@ -39,25 +40,68 @@
 
         <div class="hero-display">
 
-          <div class="container">
+          <div class="container" id="about-container">
 
-            <div class="shape" id="one"><h3>ABOUT</h3></div>
-            <div class="shape" id="two"></div>
-            <div class="shape" id="three"></div>
+            <div class="shape one" id="about">
+              <div class="about-content" id="about-content">
+                <h2 class="title">ABOUT</h2>
+                <p>
+                I'm an aspiring software enginner based in London.
+                I've worked in the coffee industry for over 6 years and felt like I've reached the end of that journey, in turn pursuing a new career.
+                Using Codecademy and various other open source platforms across the web, I studied software developement and created unique projects to 
+                show my passion for the field. I'm always exploring something new, whether it's experimenting with frameworks or learning new languages 
+                altogether. 
+                <br> 
+                <br> 
+                Outside of the virtual world, I love all things creative - art and design, textiles, playing and composing music... as well as travelling, 
+                gardening and playing with my cat.
+                </p>
+              </div>
+            </div>
+
+            <div class="shape two">
+              <h1>LI</h1>
+            </div>
+
+            <div class="shape three">
+              <h1>LY</h1>
+            </div>
+
+          </div> 
+
+          
+          <div class="container" id="skills-container">
+
+            <div class="shape two">
+              <h1>PA</h1>
+            </div>
+
+            <div class="shape one" id="skills">
+                <div class="skills-content">
+                  <h2 class="title">SKILLS</h2>
+                  <div>
+                  <p>tuktuk</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="shape two">
+              <h1>CZE</h1>
+            </div>
 
           </div>
-          <div class="container">
 
-            <div class="shape" id="two"></div>
-            <div class="shape" id="one"><h3>SKILLS</h3></div>
-            <div class="shape" id="two"></div>
+          <div class="container" id="works-container">
 
-          </div>
-          <div class="container">
-
-            <div class="shape" id="three"></div>
-            <div class="shape" id="two"></div>
-            <div class="shape" id="one"><h3>WORKS</h3></div>
+            <div class="shape three">
+              <h1>SNI</h1>
+            </div>
+            <div class="shape two">
+              <h1>AK</h1>
+            </div>
+            <div class="shape one" id="works">
+              <h2>WORKS</h2>
+            </div>
 
           </div>
 
@@ -105,9 +149,16 @@
       </div>
 
     </div>
+
     <footer>
-      <p>©Lily Paczesniak 2022</p>
+      <p class="copyright" >© Lily Paczesniak 2023</p>
     </footer>
+
+    <script src="src/script/about.js"></script>
+    <script src="src/script/skills.js"></script>
+    <script src="src/script/works.js"></script>
+    <script src="src/script/theme.js"></script>
+
   </body>
 </html>
 
