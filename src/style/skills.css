@@ -1,0 +1,27 @@
+.skills-content {
+    overflow: hidden;
+}
+
+.skills-content .title {
+    padding: 50px;
+}
+
+.skills-content div {
+    display: none;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.icon-container i {
+    font-size: 3rem;
+}
+
+.icon-container p {
+    font-size: 3rem;
+}
