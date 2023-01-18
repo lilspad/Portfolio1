@@ -7,14 +7,15 @@ let all = document.querySelector('*');
 
 
 about.addEventListener('pointerover', () => {
-    p.style.display = 'block';
-    title.style.padding = '5px';
+    p.style.marginTop = '0';
+    title.style.padding = '4px';
     aboutContainer.style.height = '95%';
-    hero.style.marginTop = '0';
+    hero.style.marginTop = '1%';
     hero.style.width = '90%'
 });
 
 about.addEventListener('pointerout', () => {
+    p.style.marginTop = "100%";
     title.style.padding = '50px';
     aboutContainer.style.height = '50%';
     hero.style.marginTop = '4%';

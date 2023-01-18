@@ -12,8 +12,9 @@ p {
 }
 
 .about-content p {
-    display: none;
+    margin-top: 100%;
     padding: 5px;
+    transition: margin 1s ease;
 }
 
 .about-content {
@@ -25,5 +26,5 @@ p {
 }
 
 #about-content {
-    transition: all 0.6s ease 0.2s;
+    transition: all 0.6s ease;
 }

@@ -6,5 +6,5 @@ skills.addEventListener('pointerover', () => {
 });
 
 skills.addEventListener('pointerout', () => {
-    hero.style.width = '60%';
+    hero.style.width = '70%';
 });
