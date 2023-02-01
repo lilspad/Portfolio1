@@ -60,8 +60,7 @@ textarea {
 }
 
 #submit:hover {
-    background-color: #EEF4D4;
-    color: black;
+    background-color: #D64550;
     transition: all 0.5s;
 }
 
@@ -75,18 +74,29 @@ textarea {
     color: #1C2826;
 }
 
-.contact-container i {
-    font-size: 2.5rem;
+.contact-container a, .contact-container p {
+    font-size: 1.5rem;
     height: 50%;
-    width: 25%;
+    width: 20%;
     text-align: center;
-    line-height: 3rem;
+    line-height: 3.5rem;
+    transition: none;
 }
 
-.contact-container a {
-    line-height: 3rem;
-    font-size: 1.5rem;
+.contact-container i {
+    font-size: 2.5rem;
+    transition: none;
 }
+
+.contact-container a:hover {
+    color: #D64550;
+    font-weight: 400;
+}
+
+.contact-container a:hover i {
+    color: #D64550;
+}
+
 
 footer {
     display: block;
