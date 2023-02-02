@@ -13,7 +13,7 @@ p {
 
 .about-content p {
     margin-top: 100%;
-    padding: 5px;
+    padding: 15px;
     transition: margin 1s ease;
 }
 

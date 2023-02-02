@@ -6,22 +6,32 @@ let p = document.querySelector('.about-content p');
 
 
 const handleOverAbout = () => {
-    p.style.height = '100%';
-    p.style.margin = 'auto';
-    title.style.padding = '0';
+
+    if (hero.classList.contains('worksOn')) {
+        hero.classList.remove('worksOn');
+        handleChange();
+    }
+
+    p.style.marginTop = '0';
+    title.style.padding = '10px';
     title.style.fontSize = '2rem';
+
     aboutContainer.style.height = '95%';
     about.style.width = '60%';
-    hero.style.marginTop = '1%';
+
+    hero.style.marginTop = '3%';
 }
 
 const handleOutAbout = () => {
+    
     p.style.marginTop = "100%";
     title.style.padding = '50px';
     title.style.fontSize = '3.75rem';
+
     aboutContainer.style.height = '50%';
     about.style.width = '50%';
-    hero.style.marginTop = '4%';
+
+    hero.style.marginTop = '5%';
 }
 
 about.addEventListener('pointerover', handleOverAbout);
