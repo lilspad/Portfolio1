@@ -53,10 +53,6 @@ header .container {
     margin-right: 5%;
 }
 
-header h3 {
-    padding: 1rem;
-}
-
 .hero {
     height: 95vh;
 }
@@ -66,7 +62,7 @@ header h3 {
     width: 70%;
     height: 50%;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 .hero .container {
@@ -80,15 +76,15 @@ header h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
 
-.shape h2 {
+.title {
     font-size: 3.75rem;
 }
 
-.shape h1 {
+.initials {
     font-size: 7.5rem;
+    transition: all 0.6s;
 }
 
 .one {
