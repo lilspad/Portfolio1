@@ -5,7 +5,7 @@ let projects = [];
 
 let names = ['KoiBoi | mini game', 'Scrabble | React App', 'Capricious | Website', 'Skincare | Website', 'Currently working on', 'More projects'];
 let sources = ['https://github.com/lilspad/KoiBoi', 'https://github.com/lilspad/scrabble-app', 'https://github.com/lilspad/capricious-garden', 'wbs2src', '', 'https://github.com/lilspad?tab=repositories'];
-let demos = ['https://koi-boi.herokuapp.com/', 'https://wildwood-scrabble.herokuapp.com/', 'wbs1demo', 'wbs2demo'];
+let demos = ['https://koi-boi.herokuapp.com/', 'https://wildwood-scrabble.herokuapp.com/', 'https://dreamy-meringue-2d3f95.netlify.app/', 'wbs2demo'];
 
 function createProject(name, src, demo) {
     return {
