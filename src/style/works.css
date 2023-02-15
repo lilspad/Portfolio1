@@ -36,12 +36,6 @@
     color: black;
 }
 
-#project0 {
-    background-image: url("../png/koiboi.png");
-    background-size: cover;
-    background-position: center;
-}
-
 #project1 {
     background-image: url("../png/scrabble.png");
     background-size: cover;
@@ -54,35 +48,87 @@
     background-position: center;
 }
 
-.other {
-    text-align: center;
-    padding: 10%;
+#project3 {
+    background-image: url("../png/koiboi.png");
+    background-size: cover;
+    background-position: center;
 }
 
-.other a {
-    font-size: 2.5rem;
-    font-weight: 400;
+.more {
+    text-align: center;
+    padding: 10%;
+    overflow: scroll;
+    height: 90%;
+}
+
+.more h2 {
+    padding: 10px;
+}
+
+.more .content {
+    display: none;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.more .content.column {
+    flex-direction: column;
+}
+
+.more .content * {
+    font-weight: 800;
     color: white;
 }
 
-#project4:hover {
-    background-color: #EEF4D4;
+.more .content h2 {
+    font-size: 1.3rem;
 }
 
-#project4:hover a {
-    color: black;
+.more .content a {
+    padding: 10px;
 }
 
+
+#project4:hover, 
 #project5:hover {
     background-color: #EEF4D4;
+    height: 120%;
 }
 
-#project5:hover a {
+
+#project4:hover *, 
+#project5:hover * {
     color: black;
 }
 
-#project4 .project, #project4 a,
-#project5 .project, #project5 a {
+#project4:hover .content,
+#project5:hover .content {
+    display: flex;
+}
+
+#project4:hover .more,
+#project5:hover .more {
+    padding: 2%;
+}
+
+#project4 .project, 
+#project5 .project {
     background: none;
 }
 
+#project5 .button {
+    border-radius: 40px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 400;
+    background-color: #D64550;
+}
+
+#project5 .button:hover {
+    background-color: white;
+    color: black;
+}
+
+#project5 a:hover {
+    color: #D64550;
+}

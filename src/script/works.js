@@ -3,9 +3,9 @@ let worksContainer = document.getElementById('works-container');
 
 let projects = [];
 
-let names = ['KoiBoi | mini game', 'Scrabble | React App', 'Capricious | Website', 'Skincare | Website', 'Currently working on', 'More projects'];
-let sources = ['https://github.com/lilspad/KoiBoi', 'https://github.com/lilspad/scrabble-app', 'https://github.com/lilspad/capricious-garden', 'wbs2src', '', 'https://github.com/lilspad?tab=repositories'];
-let demos = ['https://koi-boi.herokuapp.com/', 'https://wildwood-scrabble.herokuapp.com/', 'https://dreamy-meringue-2d3f95.netlify.app/', 'wbs2demo'];
+let names = ['Skincare | eCommerce App', 'Scrabble | React App', 'Capricious | Website', 'KoiBoi | mini game', 'Currently working on', 'More projects'];
+let sources = ['appsrc', 'https://github.com/lilspad/scrabble-app', 'https://github.com/lilspad/capricious-garden', 'https://github.com/lilspad/KoiBoi', '', 'https://github.com/lilspad?tab=repositories'];
+let demos = ['appdemo', 'https://wildwood-scrabble.herokuapp.com/', 'https://dreamy-meringue-2d3f95.netlify.app/', 'https://koi-boi.herokuapp.com/'];
 
 function createProject(name, src, demo) {
     return {
@@ -27,8 +27,15 @@ function createElement(project) {
     if (project.demo) {
         element.innerHTML = '<h3>' + project.name + '</h3><a href="' + project.src + '"target="blank" class="button source">Source</a><a href="' +
         project.demo + '"target="blank" class="button demo">Demo</a>'; 
-    } else {
-        element.innerHTML = '<div class="other"><a href="' + project.src + ' target="blank" >' + project.name + '</a></div>';
+    } else if (project.name === "Currently working on") {
+        element.innerHTML = '<div class="more"><h3>' + project.name + '</h3><div class="content"><div><h2>Learning..</h2><p>C#</p><p>React native</p></div>' + 
+        '<div><h2>Developing..</h2><p>Scrabble React App</p><p>Utility Mobile app</p><p>2D RPG game</p></div></div></div>';
+    } else if (project.name === "More projects") {
+        element.innerHTML = '<div class="more"><h3>' + project.name + '</h3><div class="content column">' + 
+        '<a href="https://github.com/lilspad/lilspad.github.io" target="blank">This portofolio</a>' + 
+        '<a href="" target="blank">Some website</a>'+ 
+        '<a href="" target="blank">Some website</a>' + 
+        '<a href="' + project.src + '" class="button">GitHub repositories ></a></div></div>';
     }
     return element;
 }
