@@ -12,22 +12,20 @@
 
 .contact form {
     height: 50%;
-    width: 45%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: space-around;
 }
 
 form input,
 textarea {
-    border: 0.5px solid #1C2826;
+    border: none;
     background-color: #EEF4D4;
     border-radius: 15px;
     width: 40%;
-    margin: auto;
-    padding: 0.5rem;
+    margin: 0.5rem auto;
+    padding: 0.6rem;
 }
 
 .form-container {
@@ -37,13 +35,12 @@ textarea {
 }
 
 #top {
-    height: 25%;
     width: 60%;
     margin: auto;
 }
 
 #bottom {
-    height: 70%;
+    height: 80%;
 }
 
 #bottom textarea {
@@ -52,8 +49,7 @@ textarea {
 }
 
 #submit {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% auto;
     background-color: #1C2826;
     color: white;
 
