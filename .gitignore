@@ -3,3 +3,8 @@
 skills.html
 src/.DS_Store
 src/png/.DS_Store
+skills.html
+src/script/skills-test.js
+src/style/skills.css
+*.map
+*.scss
