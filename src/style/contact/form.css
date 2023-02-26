@@ -1,0 +1,55 @@
+form {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+form input,
+form textarea {
+  border: none;
+  background-color: #EEF4D4;
+  border-radius: 15px;
+  font-weight: 500;
+  width: 38%;
+  margin: 0.5rem auto;
+  padding: 10px 25px;
+  font: 1rem "Raleway", sans-serif;
+}
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 2px solid #D64550;
+}
+form textarea {
+  resize: none;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#top {
+  width: 60%;
+  margin: auto;
+}
+
+#bottom {
+  height: 80%;
+}
+#bottom textarea {
+  height: 85%;
+  width: 65%;
+}
+
+#submit {
+  margin: 5% auto;
+  background-color: #1C2826;
+  color: white;
+}
+#submit:hover {
+  background-color: #D64550;
+  transition: all 0.4s;
+}
