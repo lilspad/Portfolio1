@@ -39,6 +39,7 @@ function handleChange() {
 
     about.style.width = '50%';
     skills.style.width = '50%';
+    skills.style.zIndex = '1';
 
 }
 

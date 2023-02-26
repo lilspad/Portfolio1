@@ -28,11 +28,12 @@ function setDark() {
     };
     
     buttons[0].style.backgroundColor = v.accentColor3;
-    buttons[1].style.backgroundColor = v.backgroundColor;
+    buttons[0].innerHTML = '<i class="fa-solid fa-cloud-sun"></i>';
+    buttons[1].style.backgroundColor = v.mainColor;
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('pointerover', () => buttons[i].style.backgroundColor = v.accentColor3);
-        buttons[i].addEventListener('pointerout', () => buttons[i].style.backgroundColor = v.backgroundColor);
+        buttons[i].addEventListener('pointerout', () => buttons[i].style.backgroundColor = v.mainColor);
     };
 
     contact.style.backgroundColor = "black";
@@ -58,10 +59,11 @@ function setLight() {
     }
 
     buttons[0].style.backgroundColor = v.accentColor1;
+    buttons[0].innerHTML = '<i class="fa-solid fa-cloud-moon">';
     buttons[1].style.backgroundColor = "white";
 
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('pointerover', () => buttons[i].style.backgroundColor = v.accentColor1);
+        buttons[i].addEventListener('pointerover', () => buttons[i].style.backgroundColor = v.accentColor3);
         buttons[i].addEventListener('pointerout', () => buttons[i].style.backgroundColor = "white");
     };
 

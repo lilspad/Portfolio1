@@ -1,12 +1,10 @@
-let skills = document.getElementById('skills');
-let skillsContainer = document.getElementById('skills-container');
-let shapeTwo1 = document.getElementById('two1')
-let shapeTwo2 = document.getElementById('two2')
-let shapeH1 = document.getElementsByClassName('initials');
-let shapeH2 = document.getElementsByClassName('title')
-
-let skillsContent = document.createElement('div');
-skillsContent.innerHTML = ''
+const skills = document.getElementById('skills');
+const skillsTitle = document.getElementById('skills-title');
+const skillsContainer = document.getElementById('skills-container');
+const shapeTwo1 = document.getElementById('two1')
+const shapeTwo2 = document.getElementById('two2')
+const shapeH1 = document.getElementsByClassName('initials');
+const shapeH2 = document.getElementsByClassName('title')
 
 const handleOverSkills = () => {
 
@@ -19,6 +17,7 @@ const handleOverSkills = () => {
     skills.style.width = '98%';
     shapeTwo1.style.width = '1%';
     shapeTwo2.style.width = '1%';
+    skillsTitle.style.display = "none";
 
     aboutContainer.style.height = '5%';
     worksContainer.style.height = '5%';
@@ -27,11 +26,9 @@ const handleOverSkills = () => {
     hero.style.marginTop = '3%';
 
     for (let i = 0; i < shapeH2.length; i ++) {
-        if (shapeH2[i].id === 'skills-title') {
-           skills.appendChild(skillsContent); 
-        } else {
+        
         shapeH2[i].style.fontSize = "0";
-        }
+        
     }
 
     for (let i = 0; i < shapeH1.length; i ++) {
@@ -42,10 +39,12 @@ const handleOverSkills = () => {
 
 const handleOutSkills = () => {
 
+
     skillsContainer.style.height = '50%';
     skills.style.width = '50%';
     shapeTwo1.style.width = '25%';
     shapeTwo2.style.width = '25%';
+    skillsTitle.style.display = "block";
 
     aboutContainer.style.height = '50%';
     worksContainer.style.height = '50%';
@@ -54,11 +53,7 @@ const handleOutSkills = () => {
     hero.style.marginTop = '4%';
 
     for (let i = 0; i < shapeH2.length; i ++) {
-        if (shapeH2[i].id === 'skills-title') {
-            skills.removeChild(skillsContent);
-            shapeH2[i].innerHTML = 'SKILLS';
-            shapeH2[i].style.fontSize = "3.75rem";
-        }
+
         shapeH2[i].style.fontSize = "3.75rem";
     }
 

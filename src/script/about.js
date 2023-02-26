@@ -17,7 +17,7 @@ const handleOverAbout = () => {
     title.style.fontSize = '2rem';
 
     aboutContainer.style.height = '95%';
-    about.style.width = '60%';
+    about.style.width = '75%';
 
     hero.style.marginTop = '3%';
 }
