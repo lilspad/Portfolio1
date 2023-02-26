@@ -82,11 +82,17 @@ if (isset($_POST['email'])) {
     $headers = 'From: ' . $email . "\r\n" .
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
+    if (@mail($email_to, $email_subject, $email_message, $headers)) {
     ?>
 
         <div class="php"><h2>Thanks <?php echo $name ?>!</h2><p>I'll get back to you as soon as I can :)</p></div>
 
 <?php
+    } else {
+        ?>
+
+        <div class="php"><p>Something went wrong.</p></div>
+<?php
+    }
 }
 ?>
