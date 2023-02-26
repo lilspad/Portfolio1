@@ -8,3 +8,6 @@ src/script/skills-test.js
 src/style/skills.css
 *.map
 *.scss
+vendor/*
+composer.json
+composer.lock
