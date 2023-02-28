@@ -22,7 +22,7 @@ header {
   display: block;
   margin-top: 0;
   width: 100%;
-  height: auto;
+  height: 2rem;
 }
 header .button {
   text-align: center;
