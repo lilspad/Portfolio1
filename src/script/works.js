@@ -29,7 +29,7 @@ function createElement(project) {
         project.demo + '"target="blank" class="button demo">Demo</a>'; 
     } else if (project.name === "Currently working on") {
         element.innerHTML = '<div class="more"><h3>' + project.name + '</h3><div class="content">' + 
-        '<div><a href="https://github.com/lilspad?tab=repositories" target="blank">Scrabble React App</a><a href="https://wildwood-scrabble.netlify.app/" target="blank" > ( Demo ) </a></div>' + 
+        '<div><a href="https://github.com/lilspad/scrabble-app" target="blank">Scrabble React App</a><a href="https://wildwood-scrabble.netlify.app/" target="blank" > ( Demo ) </a></div>' + 
         '<a href="" target="blank">2D RPG game</a>';
     } else if (project.name === "More projects") {
         element.innerHTML = '<div class="more"><h3>' + project.name + '</h3><div class="content">' + 
