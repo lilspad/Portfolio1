@@ -1,8 +1,11 @@
 let about = document.getElementById('about');
 let aboutContainer = document.getElementById('about-container');
+let aboutContent = document.getElementById('about-content')
 
-let title = document.querySelector('.about-content .title');
+let title = document.querySelector('.title');
 let p = document.querySelector('.about-content p');
+
+let mediaQuery = window.matchMedia("(max-width: 1500px)")
 
 
 const handleOverAbout = () => {
@@ -12,9 +15,14 @@ const handleOverAbout = () => {
         handleChange();
     }
 
-    p.style.marginTop = '0';
-    title.style.padding = '10px';
-    title.style.fontSize = '2rem';
+    if (mediaQuery.matches) {
+        p.style.marginTop = '5%';
+        title.style.marginTop = '-100%';
+    } else {
+        p.style.marginTop = '10%';
+        title.style.marginTop = '-35%';
+        title.style.fontSize = '2rem';
+    }
 
     aboutContainer.style.height = '95%';
     about.style.width = '75%';
@@ -25,7 +33,7 @@ const handleOverAbout = () => {
 const handleOutAbout = () => {
     
     p.style.marginTop = "100%";
-    title.style.padding = '50px';
+    title.style.marginTop = "0"
     title.style.fontSize = '3.75rem';
 
     aboutContainer.style.height = '50%';
