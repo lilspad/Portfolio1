@@ -19,8 +19,8 @@ const handleOverAbout = () => {
         p.style.marginTop = '5%';
         title.style.marginTop = '-100%';
     } else {
-        p.style.marginTop = '10%';
-        title.style.marginTop = '-35%';
+        p.style.marginTop = '8%';
+        title.style.marginTop = '-30%';
         title.style.fontSize = '2rem';
     }
 
