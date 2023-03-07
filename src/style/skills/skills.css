@@ -1,55 +1,119 @@
-@keyframes test {
-  from {
-    width: 0;
-    height: 0;
-    font-size: 0;
-  }
-  to {
-    width: 4em;
-    height: 4em;
-  }
-}
-.skills-content {
+#skills {
+  position: relative;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
-.languages-section {
-  display: none;
+.skills-content {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 100%;
   width: 100%;
   height: 100%;
-  margin: auto;
-}
-.languages-section h2 {
-  font-size: 2rem;
-  padding: 20px;
 }
 
-.languages {
+.skills-nav {
   display: flex;
-  position: relative;
-  flex-wrap: wrap;
+  position: absolute;
+  justify-content: space-evenly;
+  justify-items: start;
+  top: 2%;
+  height: 100px;
+  width: 100%;
+}
+
+.skill-icon {
+  height: 55px;
+  width: 55px;
+  border-radius: 55px;
+  background-color: #1C2826;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+.skill-icon p {
+  display: inline-block;
+  font-weight: 600;
+  vertical-align: middle;
+  font-size: 0;
+  transition: none;
+}
+.skill-icon:hover {
+  cursor: pointer;
+  width: 200px;
+  background-color: #EA9E8D;
+}
+.skill-icon:hover p {
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.skill-icon.bold {
+  font-weight: 800;
+}
+.skill-icon.active {
+  width: 200px;
+  background-color: #EA9E8D;
+}
+.skill-icon.active p {
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+
+.skills-section {
+  display: none;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  padding-top: 100px;
+}
+.skills-section .gallery {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 800px;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.skills-section i {
+  height: 100px;
+  width: 120px;
+  font-size: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.6s ease;
+  color: #1C2826;
+}
+.skills-section i p {
+  margin-top: 20px;
+  opacity: 0;
+  transition: all 0.6s ease;
+  font-size: 1.2rem;
+}
+.skills-section i:hover {
+  color: #D64550;
+}
+.skills-section i:hover p {
+  opacity: 1;
+  color: black;
+}
+.skills-section .text {
+  width: 60%;
+  padding: 20px 50px;
+  border-radius: 30px;
+  margin: auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #D64550;
+  color: white;
 }
 
-.language {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  text-align: center;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.language i {
-  font-size: 2rem;
-  position: absolute;
-}
-.language p {
-  font-size: 1.5rem;
-  display: none;
-  margin-top: 50em;
+.active {
+  display: block;
 }
