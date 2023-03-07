@@ -4,7 +4,11 @@ const skillsContainer = document.getElementById('skills-container');
 const shapeTwo1 = document.getElementById('two1')
 const shapeTwo2 = document.getElementById('two2')
 const shapeH1 = document.getElementsByClassName('initials');
-const shapeH2 = document.getElementsByClassName('title')
+const shapeH2 = document.getElementsByClassName('title');
+
+const skillsContent = document.getElementById('skills-content');
+const skillIcons = document.getElementsByClassName('skill-icon');
+const sections = document.getElementsByClassName('skills-section');
 
 const handleOverSkills = () => {
 
@@ -35,6 +39,7 @@ const handleOverSkills = () => {
         shapeH1[i].style.fontSize = "0";
     }
 
+    skillsContent.style.marginTop = '15%';
 }
 
 const handleOutSkills = () => {
@@ -61,8 +66,34 @@ const handleOutSkills = () => {
         shapeH1[i].style.fontSize = "7.5rem";
     }
 
+    skillsContent.style.marginTop = '100%';
+
 }
 
 skills.addEventListener('pointerover', handleOverSkills);
 
 skills.addEventListener('pointerout', handleOutSkills);
+
+const handleNavClick = (event) => {
+
+    let icon = event.target;
+
+    if (!icon.id) {
+        icon = icon.parentElement;
+    }
+
+    for (let i = 0; i< skillIcons.length; i ++) {
+        skillIcons[i].classList.remove('active');
+        sections[i].classList.remove('active');
+    }
+
+    icon.classList.add('active');
+
+    const sectionId = icon.id.replace('-icon', '');
+    const section = document.getElementById(sectionId);
+    section.classList.add('active');
+}
+
+for (let i = 0; i < skillIcons.length; i ++) {
+    skillIcons[i].addEventListener('click', (e) => handleNavClick(e));
+}
