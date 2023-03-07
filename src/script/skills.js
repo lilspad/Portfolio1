@@ -39,7 +39,7 @@ const handleOverSkills = () => {
         shapeH1[i].style.fontSize = "0";
     }
 
-    skillsContent.style.marginTop = '15%';
+    skillsContent.style.marginTop = '10%';
 }
 
 const handleOutSkills = () => {

@@ -19,7 +19,7 @@
   position: absolute;
   justify-content: space-evenly;
   justify-items: start;
-  top: 2%;
+  top: 0;
   height: 100px;
   width: 100%;
 }
@@ -102,6 +102,9 @@
 .skills-section i:hover p {
   opacity: 1;
   color: black;
+}
+.skills-section h3 {
+  margin-top: 20px;
 }
 .skills-section .text {
   width: 60%;
