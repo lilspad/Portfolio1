@@ -5,7 +5,7 @@ let aboutContent = document.getElementById('about-content')
 let title = document.querySelector('.title');
 let p = document.querySelector('.about-content p');
 
-let mediaQuery = window.matchMedia("(max-width: 1500px)")
+let mediaQuery = window.matchMedia("(max-width: 1500px)");
 
 
 const handleOverAbout = () => {
@@ -17,29 +17,26 @@ const handleOverAbout = () => {
 
     if (mediaQuery.matches) {
         p.style.marginTop = '5%';
-        title.style.marginTop = '-100%';
+        title.style.marginTop = '-100vh';
     } else {
         p.style.marginTop = '8%';
         title.style.marginTop = '-30%';
         title.style.fontSize = '2rem';
     }
 
-    aboutContainer.style.height = '95%';
+    aboutContainer.style.height = '400px';
     about.style.width = '75%';
-
-    hero.style.marginTop = '3%';
 }
 
 const handleOutAbout = () => {
     
-    p.style.marginTop = "100%";
+    p.style.marginTop = "100vh";
     title.style.marginTop = "0"
     title.style.fontSize = '3.75rem';
 
-    aboutContainer.style.height = '50%';
+    aboutContainer.style.height = '25%';
     about.style.width = '50%';
 
-    hero.style.marginTop = '5%';
 }
 
 about.addEventListener('pointerover', handleOverAbout);

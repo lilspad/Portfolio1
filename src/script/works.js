@@ -34,7 +34,7 @@ function createElement(project) {
     } else if (project.name === "More projects") {
         element.innerHTML = '<div class="more"><h3>' + project.name + '</h3><div class="content">' + 
         '<a href="https://github.com/lilspad/lilspad.github.io" target="blank">This portofolio</a>' + 
-        '<a href="https://capricious.netlify.app/" target="blank">Capricious Garden Centre</a>'+ 
+        '<a href="https://github.com/lilspad/coffee-excursion" target="blank">Coffee Excursion</a>'+ 
         '<a href="https://github.com/lilspad/silver-sparrows" target="blank">Silver Sparrows</a>' + 
         '<a href="https://github.com/lilspad?tab=repositories" target="blank" class="button">GitHub repositories ></a></div></div>';
     }
@@ -44,8 +44,7 @@ function createElement(project) {
 const handleOverWorks = () => {
     hero.classList.add('worksOn');
 
-    hero.style.height = '60%';
-    hero.style.marginTop = '3%';
+    hero.style.height = '100%';
 
     let j = 0;
     for (let i = 0; i < shapes.length; i++) {
@@ -63,6 +62,8 @@ const handleOverWorks = () => {
 
     about.style.width = '0%';
     skills.style.width = '0%';
+    about.style.minWidth = '0%';
+    skills.style.minWidth = '0%';
     skills.style.zIndex = '-1';
     
 

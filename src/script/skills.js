@@ -18,16 +18,20 @@ const handleOverSkills = () => {
     }
 
     skillsContainer.style.height = '145%';
+    skillsContainer.style.maxHeight = '75vh';
     skills.style.width = '98%';
     shapeTwo1.style.width = '1%';
     shapeTwo2.style.width = '1%';
+    shapeTwo1.style.minWidth = '1%';
+    shapeTwo2.style.minWidth = '1%';
     skillsTitle.style.display = "none";
 
     aboutContainer.style.height = '5%';
     worksContainer.style.height = '5%';
+    aboutContainer.style.minHeight = '5%';
+    worksContainer.style.minHeight = '5%';
 
     hero.style.height = '60%';
-    hero.style.marginTop = '3%';
 
     for (let i = 0; i < shapeH2.length; i ++) {
         
@@ -45,16 +49,20 @@ const handleOverSkills = () => {
 const handleOutSkills = () => {
 
 
-    skillsContainer.style.height = '50%';
+    skillsContainer.style.height = '25%';
     skills.style.width = '50%';
     shapeTwo1.style.width = '25%';
     shapeTwo2.style.width = '25%';
+    shapeTwo1.style.minWidth = '200px';
+    shapeTwo2.style.minWidth = '200px';
     skillsTitle.style.display = "block";
 
-    aboutContainer.style.height = '50%';
-    worksContainer.style.height = '50%';
+    aboutContainer.style.height = '25%';
+    worksContainer.style.height = '25%';
+    aboutContainer.style.minHeight = '200px';
+    worksContainer.style.minHeight = '200px';
 
-    hero.style.height = '50%';
+    hero.style.height = '100%';
     hero.style.marginTop = '4%';
 
     for (let i = 0; i < shapeH2.length; i ++) {
@@ -66,7 +74,7 @@ const handleOutSkills = () => {
         shapeH1[i].style.fontSize = "7.5rem";
     }
 
-    skillsContent.style.marginTop = '100%';
+    skillsContent.style.marginTop = '100vh';
 
 }
 

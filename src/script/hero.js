@@ -18,8 +18,7 @@ function handleChange() {
     }
 
     hero.style.width = '70%';
-    hero.style.height = '50%';
-    hero.style.marginTop = '5%';
+    hero.style.height = '100%';
 
     let j = 0;
 
@@ -39,6 +38,8 @@ function handleChange() {
 
     about.style.width = '50%';
     skills.style.width = '50%';
+    about.style.minWidth = '200px';
+    skills.style.minWidth = '200px';
     skills.style.zIndex = '1';
 
 }
