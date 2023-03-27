@@ -5,8 +5,6 @@ let aboutContent = document.getElementById('about-content')
 let title = document.querySelector('.title');
 let p = document.querySelector('.about-content p');
 
-let mediaQuery = window.matchMedia("(max-width: 1500px)");
-
 
 const handleOverAbout = () => {
 
@@ -15,17 +13,13 @@ const handleOverAbout = () => {
         handleChange();
     }
 
-    if (mediaQuery.matches) {
-        p.style.marginTop = '5%';
-        title.style.marginTop = '-100vh';
-    } else {
-        p.style.marginTop = '8%';
-        title.style.marginTop = '-30%';
-        title.style.fontSize = '2rem';
-    }
+    p.style.marginTop = '5%';
+    title.style.marginTop = '-100vh';
 
-    aboutContainer.style.height = '400px';
-    about.style.width = '75%';
+
+    aboutContainer.style.height = '500px';
+    about.style.width = '120%';
+    about.style.height = '100%';
 }
 
 const handleOutAbout = () => {
@@ -35,7 +29,8 @@ const handleOutAbout = () => {
     title.style.fontSize = '3.75rem';
 
     aboutContainer.style.height = '25%';
-    about.style.width = '50%';
+    about.style.width = '100%';
+    about.style.height = 'unset';
 
 }
 

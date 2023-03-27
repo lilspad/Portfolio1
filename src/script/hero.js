@@ -2,6 +2,8 @@ const hero = document.querySelector('.hero-display');
 
 let initials = ['LI', 'LY', 'PA', 'CZE', 'SNI', 'AK']
 
+let mediaQuery = window.matchMedia("(max-width: 1000px)");
+
 hero.addEventListener('pointerover', () => {
     hero.style.width = '90%';
 
@@ -29,18 +31,30 @@ function handleChange() {
             j++;
 
             shapes[i].id = '';
-            shapes[i].style.width = '25%';
+            shapes[i].style.width = '100%';
         }
     }
 
     about.style.display = 'flex';
     skills.style.display = 'flex';
 
-    about.style.width = '50%';
-    skills.style.width = '50%';
-    about.style.minWidth = '200px';
-    skills.style.minWidth = '200px';
-    skills.style.zIndex = '1';
+    
+
+    if (mediaQuery.matches) {
+        skillsContainer.style.flexWrap = 'wrap';
+        skillsContainer.style.height = '43%';
+        about.style.height = '25%';
+        about.style.minHeight = '100px';
+        skills.style.height = 'unset';
+        skills.style.minHeight = '100px';
+        skills.style.zIndex = '1';
+    } else {
+        about.style.width = '100%';
+        skills.style.width = '100%';
+        about.style.minWidth = '200px';
+        skills.style.minWidth = '50%';
+        skills.style.zIndex = '1';
+    }
 
 }
 
