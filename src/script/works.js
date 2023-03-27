@@ -1,10 +1,11 @@
 let works = document.getElementById('works');
 let worksContainer = document.getElementById('works-container');
+let secondary = document.getElementsByClassName('secondary-container');
 
 let projects = [];
 
-let names = ['Modest | eCommerce App', 'Some | New App', 'Capricious | Website', 'KoiBoi | mini game', 'Currently working on', 'More projects'];
-let sources = ['https://github.com/lilspad/modest', 'appsrc', 'https://github.com/lilspad/capricious-garden', 'https://github.com/lilspad/KoiBoi'];
+let names = ['Modest | eCommerce App', 'Doodle | Drawing App', 'Capricious | Website', 'KoiBoi | Mini Game', 'Currently working on', 'More projects'];
+let sources = ['https://github.com/lilspad/modest', 'https://github.com/lilspad/drawing-app', 'https://github.com/lilspad/capricious-garden', 'https://github.com/lilspad/KoiBoi'];
 let demos = ['https://modestskincare.netlify.app/', 'appdemo', 'https://capricious.netlify.app/', 'https://koi-boi.herokuapp.com/'];
 
 function createProject(name, src, demo) {
@@ -30,11 +31,10 @@ function createElement(project) {
     } else if (project.name === "Currently working on") {
         element.innerHTML = '<div class="more"><h3>' + project.name + '</h3><div class="content">' + 
         '<div><a href="https://github.com/lilspad/scrabble-app" target="blank">Scrabble React App</a><a href="https://wildwood-scrabble.netlify.app/" target="blank" > ( Demo ) </a></div>' + 
-        '<a href="" target="blank">2D RPG game</a>';
+        '<a href="https://github.com/lilspad/coffee-excursion" target="blank">Coffee Excursion</a>';
     } else if (project.name === "More projects") {
         element.innerHTML = '<div class="more"><h3>' + project.name + '</h3><div class="content">' + 
         '<a href="https://github.com/lilspad/lilspad.github.io" target="blank">This portofolio</a>' + 
-        '<a href="https://github.com/lilspad/coffee-excursion" target="blank">Coffee Excursion</a>'+ 
         '<a href="https://github.com/lilspad/silver-sparrows" target="blank">Silver Sparrows</a>' + 
         '<a href="https://github.com/lilspad?tab=repositories" target="blank" class="button">GitHub repositories ></a></div></div>';
     }
@@ -44,7 +44,7 @@ function createElement(project) {
 const handleOverWorks = () => {
     hero.classList.add('worksOn');
 
-    hero.style.height = '100%';
+    hero.style.height = '130%';
 
     let j = 0;
     for (let i = 0; i < shapes.length; i++) {
@@ -57,24 +57,38 @@ const handleOverWorks = () => {
             j ++;
 
             shapes[i].style.width = '50%';
+            
         }
     }
 
-    about.style.width = '0%';
-    skills.style.width = '0%';
-    about.style.minWidth = '0%';
-    skills.style.minWidth = '0%';
-    skills.style.zIndex = '-1';
-    
-
-    about.addEventListener('transitionend', () => {
-        if (!hero.classList.contains('worksOn')) {
-            return;
-        }
+    if (mediaQuery.matches) {
+        skillsContainer.style.flexWrap = 'nowrap';
+        skillsContainer.style.height = '25%';
+        about.style.height = '0%';
+        skills.style.height = '0%';
+        about.style.minHeight = '0%';
+        skills.style.minHeight = '0%';
+        skills.style.zIndex = '-1';
         about.style.display = 'none';
         skills.style.display = 'none';
+    } else {
+        about.style.width = '0%';
+        skills.style.width = '0%';
+        about.style.minWidth = '0%';
+        skills.style.minWidth = '0%';
+        skills.style.zIndex = '-1';
+        about.addEventListener('transitionend', () => {
+            if (!hero.classList.contains('worksOn')) {
+                return;
+            }
+            about.style.display = 'none';
+            skills.style.display = 'none';
 
-    })
+        })
+    }
+    
+
+    
 
     
 }
