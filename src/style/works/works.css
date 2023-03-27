@@ -51,7 +51,7 @@
 }
 
 #project1 {
-  background-image: url("");
+  background-image: url("../../png/drawing-app.png");
   background-size: cover;
   background-position: center;
 }
@@ -72,6 +72,7 @@
   text-align: center;
   padding: 10%;
   height: 90%;
+  overflow: scroll;
 }
 .more h2 {
   padding: 10px;
@@ -80,9 +81,7 @@
   display: none;
   height: 200px;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  overflow: scroll;
+  margin-top: 90%;
 }
 .more .content * {
   font-weight: 800;
@@ -95,6 +94,9 @@
   padding: 10px;
 }
 
+#project5, #project4 {
+  width: 25%;
+}
 #project5:hover, #project4:hover {
   background-color: #EEF4D4;
 }

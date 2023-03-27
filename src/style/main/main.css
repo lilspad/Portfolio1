@@ -23,7 +23,6 @@ header {
   margin-top: 0;
   width: 100%;
   height: 2rem;
-  padding: 10px;
 }
 header .button {
   text-align: center;
@@ -53,28 +52,40 @@ header .container {
 
 .hero {
   height: 90vh;
+  min-height: 800px;
   margin-top: 8vh;
 }
 
 .hero-display {
   display: block;
   width: 70%;
-  min-width: 750px;
   height: 100%;
-  min-height: 600px;
+  min-height: 100%;
+  max-height: 80vh;
   margin: auto;
   transition: all 0.6s ease;
 }
 .hero-display .container {
   display: flex;
-  height: 25%;
-  min-height: 200px;
+  min-height: 25%;
   transition: all 0.6s ease;
+}
+.hero-display .secondary-container {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .hero-display .container {
+    flex-wrap: wrap;
+  }
+  .hero-display #skills-container {
+    height: 43.5%;
+  }
 }
 
 .shape {
-  width: 50%;
   min-width: 200px;
+  min-height: 100px;
   border: 2px solid #DAEFB3;
   display: flex;
   justify-content: center;
@@ -119,16 +130,17 @@ header .container {
 }
 .one {
   background-color: #EEF4D4;
+  width: 100%;
 }
 
 .two {
   background-color: #EA9E8D;
-  width: 25%;
+  width: 50%;
 }
 
 .three {
   background-color: #D64550;
-  width: 25%;
+  width: 50%;
 }
 
 .contact {
@@ -184,10 +196,20 @@ iframe {
 }
 
 @media screen and (max-width: 950px) {
+  .contact {
+    height: 100%;
+  }
+  #iframe-container {
+    width: 100%;
+    height: 50vh;
+  }
   .contact-container {
     height: -moz-fit-content;
     height: fit-content;
     flex-direction: column;
+  }
+  .contact-container a, .contact-container p {
+    width: 100%;
   }
 }
 footer {

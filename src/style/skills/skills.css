@@ -1,4 +1,10 @@
+#skills-container .shape {
+  width: 100%;
+  max-height: 75vh;
+}
+
 #skills {
+  min-width: 50%;
   position: relative;
   justify-content: space-around;
   display: flex;
