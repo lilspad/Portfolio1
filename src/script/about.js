@@ -17,9 +17,15 @@ const handleOverAbout = () => {
     title.style.marginTop = '-100vh';
 
 
-    aboutContainer.style.height = '500px';
+    aboutContainer.style.height = '50%';
     about.style.width = '120%';
     about.style.height = '100%';
+
+    skillsContainer.style.height = '15%';
+    worksContainer.style.height = '15%';
+    
+    skillsContainer.style.minHeight = '15%';
+    worksContainer.style.minHeight = '15%';
 }
 
 const handleOutAbout = () => {
@@ -31,6 +37,12 @@ const handleOutAbout = () => {
     aboutContainer.style.height = '25%';
     about.style.width = '100%';
     about.style.height = 'unset';
+
+    skillsContainer.style.height = '25%';
+    worksContainer.style.height = '25%';
+    
+    skillsContainer.style.minHeight = '100px';
+    worksContainer.style.minHeight = '100px';
 
 }
 

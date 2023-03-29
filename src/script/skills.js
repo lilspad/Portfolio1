@@ -18,6 +18,7 @@ const handleOverSkills = () => {
         handleChange();
     }
 
+    skills.style.height = '100%';
     skills.style.minHeight = '400px';
     skillsTitle.style.display = "none";
 
@@ -28,8 +29,8 @@ const handleOverSkills = () => {
 
     for (let i = 0; i < shapes.length; i++) {
         if (shapes[i].id !== 'skills') {
-            shapes[i].style.height = '100%';
-            shapes[i].style.minHeight = '5%';
+            shapes[i].style.height = '80%';
+            shapes[i].style.minHeight = '2%';
         } 
     }
 
@@ -46,7 +47,7 @@ const handleOverSkills = () => {
         shapeTwo2.style.width = '1%';
         shapeTwo1.style.minWidth = '1%';
         shapeTwo2.style.minWidth = '1%';
-        skillsContainer.style.height = '140%';
+        skillsContainer.style.height = '78.5%';
         skills.style.width = '98%';
     }
 
@@ -87,7 +88,6 @@ const handleOutSkills = () => {
     worksContainer.style.minHeight = '100px';
 
     hero.style.height = '100%';
-    hero.style.marginTop = '8vh';
 
     for (let i = 0; i < shapes.length; i++) {
         shapes[i].style.height = 'unset';

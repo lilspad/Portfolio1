@@ -43,7 +43,7 @@ function handleChange() {
     if (mediaQuery.matches) {
         skillsContainer.style.flexWrap = 'wrap';
         skillsContainer.style.height = '43%';
-        about.style.height = '25%';
+        about.style.height = 'unset';
         about.style.minHeight = '100px';
         skills.style.height = 'unset';
         skills.style.minHeight = '100px';
