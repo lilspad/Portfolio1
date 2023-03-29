@@ -27,8 +27,7 @@ header {
 header .button {
   display: flex;
   text-align: center;
-  width: 50px;
-  border-radius: 50px;
+  border-radius: 999px;
   padding: 15px;
   background-color: white;
   border: none;
@@ -53,8 +52,8 @@ header .container {
 
 .hero {
   height: 90vh;
+  min-height: 900px;
   width: 100vw;
-  min-height: 800px;
 }
 
 .hero-display {
@@ -69,8 +68,10 @@ header .container {
 }
 .hero-display .container {
   display: flex;
+  height: 25%;
   min-height: 25%;
   transition: all 0.6s ease;
+  overflow: hidden;
 }
 .hero-display .secondary-container {
   display: flex;

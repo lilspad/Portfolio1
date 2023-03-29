@@ -19,7 +19,7 @@ const handleOverSkills = () => {
     }
 
     skills.style.height = '100%';
-    skills.style.minHeight = '400px';
+    skills.style.minHeight = '100%';
     skillsTitle.style.display = "none";
 
     aboutContainer.style.height = '2%';
@@ -41,8 +41,8 @@ const handleOverSkills = () => {
         skills.style.height = '200%';
         skills.style.width = '100%';
     } else {
-        shapeTwo1.style.height = '100%';
-        shapeTwo2.style.height = '100%';
+        shapeTwo1.style.minHeight = '100%';
+        shapeTwo2.style.minHeight = '100%';
         shapeTwo1.style.width = '1%';
         shapeTwo2.style.width = '1%';
         shapeTwo1.style.minWidth = '1%';

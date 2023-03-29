@@ -17,12 +17,12 @@ const handleOverAbout = () => {
     title.style.marginTop = '-100vh';
 
 
-    aboutContainer.style.height = '50%';
+    aboutContainer.style.height = '500px';
     about.style.width = '120%';
     about.style.height = '100%';
 
-    skillsContainer.style.height = '15%';
-    worksContainer.style.height = '15%';
+    skillsContainer.style.height = '20%';
+    worksContainer.style.height = '20%';
     
     skillsContainer.style.minHeight = '15%';
     worksContainer.style.minHeight = '15%';
