@@ -7,6 +7,11 @@
   font-size: 1rem;
   text-decoration: none;
   color: inherit;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {
