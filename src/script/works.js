@@ -6,7 +6,7 @@ let projects = [];
 
 let names = ['Modest | eCommerce App', 'Doodle | Drawing App', 'Capricious | Website', 'KoiBoi | Mini Game', 'Currently working on', 'More projects'];
 let sources = ['https://github.com/lilspad/modest', 'https://github.com/lilspad/drawing-app', 'https://github.com/lilspad/capricious-garden', 'https://github.com/lilspad/KoiBoi'];
-let demos = ['https://modestskincare.netlify.app/', 'appdemo', 'https://capricious.netlify.app/', 'https://koi-boi.herokuapp.com/'];
+let demos = ['https://modestskincare.netlify.app/', 'https://a-drawing-app-lilspad.vercel.app/', 'https://capricious.netlify.app/', 'https://koi-boi.herokuapp.com/'];
 
 function createProject(name, src, demo) {
     return {
